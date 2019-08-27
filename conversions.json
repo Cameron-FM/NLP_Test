@@ -1,0 +1,46 @@
+{
+  plainFlour: ["120"],
+  glutenFreeFlour : ["156", //gluten free flour],
+  Cornflour: ["100", "corn starch", "corn flour"],
+  brownSugar: ["200", //Light Brown Sugar or Muscovado Sugar],
+  casterSugar : ["225", "superfine sugar"],
+  icingSugar: ["100", "Confectioners Sugar", "powdered sugar"],
+  granulatedSugar: ["100"],
+  salt : ["273", "salt"],
+  cocoaPowder : ["100", "cocoa powder"],
+  chocolateChips : ["150", "chocolate", "chocolate chips"],
+  butter : ["255", "butter"],
+  honey : ["340", "honey"],
+  treacle : ["325", "treacle", "molasses"],
+  goldenSyrup : ["340", "golden syrup", "corn syrup"],
+  jam : ["325", "jam", "jelly"],
+  peanutButter : ["250", "peanut butter"],
+  creamCheese: ["120", "cream cheese", "soft cheese"],
+  buttermilk : ["225", "buttermilk"],
+  coconut : ["100", //Shredded or Desiccated],
+  oats: ["140", "oats"],
+  raisins: ["150", "raisins", "sultanas"]
+}
+
+//Give words three diffrent tags depending on whether their single, have prefix or have a suffix
+
+//Have an object for similar words with varying prefixs e.g Powdered Suagr
+
+//Have an object for similar words with a varying suffix e.g Chocolate Chips
+
+//Prefix and Suffix objects must contain arrays with thoese varying prefixs and suffix'
+and the metric conversion e.g. sugar: {
+  icing: 230,
+  powdered: 230,
+  granulated: 100
+}
+
+//Single items will just have the conversion e.g honey: 340
+
+//For words like jam/jelly have two seperate items e.g jelly: 325,
+jam: 325
+
+//For words that have the prfix or suffix tag. The script should check if the words beofre or after
+is in the array of prefixs/suffix'. If it is it can be converted
+
+//Give words a defult conversion property

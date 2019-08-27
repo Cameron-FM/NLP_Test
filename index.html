@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>NLP_Test</title>
+    <script src="https://unpkg.com/compromise@latest/builds/compromise.min.js"></script>
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap" rel="stylesheet">
+    <script type="module" src="conv.js"></script>
+    <script type="module" src="nlpPlugin.js"></script>
+    <script type="module" src="script.js"></script>
+  </head>
+  <body>
+    <div class = "titleContainer">
+      <h1>Enter Your Text</h1>
+    </div>
+    <div>
+     <div class="inputContainer">
+      <input id="enter"></input>
+     </div>
+    </div>
+    <div>
+      <button id="btn">Submit</button>
+    </div>
+    <div>
+      <p id="text"></p>
+    </div>
+
+    <style>
+    body{
+      margin: 0px;
+    }
+    div{
+      display: flex;
+      justify-content: center;
+    }
+    h1{
+      margin: 0px;
+      font-family: 'Open Sans', sans-serif;
+    }
+    .titleContainer{
+      margin-top: 10vh;
+    }
+    #enter{
+      margin-top: 15px;
+      border: 0px;
+      width: 250px;
+      text-align: center;
+      outline: none;
+      font-family: 'Open Sans', sans-serif;
+      font-size: 14px;
+    }
+    .inputContainer{
+      margin-top: 10px;
+      width: 250px;
+      border-bottom: 1px solid black;
+    }
+    #btn{
+      margin-top: 50px;
+      background-color: pink;
+      width: 100px;
+      height: 50px;
+      border-radius: 7px;
+      outline: none;
+      border: 2px solid white;
+      font-family: 'Open Sans', sans-serif;
+      font-size: 14px;
+    }
+    #btn:hover{
+      background-color: #F8F8F8;
+      border: 2px solid pink;
+    }
+    #text{
+      margin-top: 45px;
+      font-family: 'Open Sans', sans-serif;
+      font-size: 36px;
+      color: 	#FFB6C1;
+    }
+    </style>
+  </body>
+</html>
